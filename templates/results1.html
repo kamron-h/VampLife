@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Results</title>
+</head>
+<body>
+<h1>Test Results</h1>
+<ul>
+    <h1>Student Results</h1>
+    {% if students %}
+        {% for student in students %}
+            <div>
+                <p>Name: {{ student['name'] }}</p>
+                <p>Has Shadow: {{ student['has_shadow'] }}</p>
+                <p>Complexion: {{ student['complexion'] }}</p>
+                <p>Dislikes Garlic: {{ student['dislike_garlic'] }}</p>
+                <p>Accent: {{ student['accent'] }}</p>
+                <p>Vampire Likelihood: {{ student['vampire_likelihood'] }}</p>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>No results found.</p>
+    {% endif %}
+</ul>
+</body>
+</html>

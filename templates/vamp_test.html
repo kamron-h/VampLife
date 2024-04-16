@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block title %}<title>Testing</title>{% endblock %}
+
+{%  block content %}
+    <main class="page vamp-test-page">
+        <section class="portfolio-block hire-me">
+            <div class="container">
+                <div class="heading">
+                    <h2>Have you been chosen?</h2>
+                </div>
+                <form class="border rounded border-0 shadow-lg p-3 p-md-5" method="POST">
+                    <div class="mb-3">
+                        <label class="form-label" for="name" style="font-weight: bold;">Name:</label>
+                        <input class="form-control" type="text" id="name" name="name" style="font-family: 'Beth Ellen', serif;">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="complexion" style="font-weight: bold;">What's your Complexion?</label>
+                        <select class="form-select" name="complexion" style="font-family: 'Beth Ellen', serif;">
+                            <option value="Pale">Pale</option>
+                            <option value="Fair">Fair</option>
+                            <option value="Olive">Olive</option>
+                            <option value="Dark">Dark</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="shadow" style="font-weight: bold;">Do you have a Shadow?</label>
+                        <select class="form-select" name="shadow" style="font-family: 'Beth Ellen', serif;">
+                            <option value="True">Yes</option>
+                            <option value="False" selected>No</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="garlic" style="font-weight: bold;">Do you dislike Garlic?</label>
+                        <select class="form-select" name="garlic" style="font-family: 'Beth Ellen', serif;">
+                            <option value="True">Yes</option>
+                            <option value="False" selected>No</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="accent" style="font-weight: bold;">Do you have a Foreign Accent?</label>
+                        <select class="form-select" name="accent" style="font-family: 'Beth Ellen', serif;">
+                            <option value="True">Yes</option>
+                            <option value="False" selected>No</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <div class="row d-md-flex justify-content-md-center">
+                            <div class="col-md-6 button"><button class="btn btn-primary d-block w-100" type="submit">See the Results!</button></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+{% endblock %}
+
+{% block scripts %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/pikaday.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+{% endblock %}
