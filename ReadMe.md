@@ -6,8 +6,6 @@
 ---------------------------
 ## Authors
 Kamron Hopkins - hopkinsk19@students.ecu.edu \
-Mehki Corpening - corpeningm19@students.ecu.edu \
-Robert Fernald - fernaldr16@students.ecu.edu
 
 ---------------------------
 
