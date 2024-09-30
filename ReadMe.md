@@ -5,7 +5,7 @@
 
 ---------------------------
 ## Authors
-Kamron Hopkins - hopkinsk19@students.ecu.edu \
+Kamron Hopkins - hopkinsk19@students.ecu.edu
 
 ---------------------------
 
